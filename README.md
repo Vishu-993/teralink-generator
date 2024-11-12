@@ -1,4 +1,4 @@
-# **Teralink Generator**
+# **Teralink Generator⚙️**
 
 ### **Description**
 **Teralink Generator** is a web application that allows users to generate direct download links from Terabox URLs. The application uses a backend API to convert Terabox sharing links into downloadable links and provides an easy-to-use frontend for users.
