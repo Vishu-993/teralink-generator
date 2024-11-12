@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terabox Direct Link Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Terabox Direct Link Generator</h1>
+    <form id="linkForm">
+        <input type="text" id="urlInput" placeholder="Paste your Terabox sharing URL here" required>
+        <button type="submit">Generate Link</button>
+    </form>
+    <div id="resultDiv">
+        <p id="statusMessage"></p>
+        <input type="text" id="linkDisplay" readonly placeholder="Generated link will appear here">
+        <button id="copyButton" onclick="copyLink()">Copy Link</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
