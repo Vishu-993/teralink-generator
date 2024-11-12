@@ -1,0 +1,14 @@
+{
+  "name": "terabox-link-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "api/generate-link.js",
+  "scripts": {
+    "start": "node api/generate-link.js",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.4.5"
+  }
+}
