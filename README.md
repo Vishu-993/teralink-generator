@@ -18,7 +18,7 @@
 ## **Demo**
 You can try out the live version of the application here:
 
-[**https://rizkyngrh23.my.id/teralink-generator**](https://teralink-generator-rizkys-projects-0e5d4b24.vercel.app/)
+[**https://rizkyngrh23.my.id/teralink-generator**](https://teralink-generator-9mo59doij-rizkys-projects-0e5d4b24.vercel.app/)
 
 ---
 
