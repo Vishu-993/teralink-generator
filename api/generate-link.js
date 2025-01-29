@@ -1,5 +1,8 @@
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
+const app = express();
+const port = process.env.PORT || 3000;
+
 
 dotenv.config();
 
@@ -43,3 +46,26 @@ export default async function handler(req, res) {
         return res.status(500).json({ error: 'Internal Server Error', details: error.message });
     }
 }
+
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/api/generate-link.js'));
+});
+
+app.listen(port, () => {
+    console.log(`🚀 Express server is running on port ${port}`);
+});
+
+// Error handling
+process.on('uncaughtException', (err) => {
+    console.error('Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection:', reason, 'at', promise);
+});
+
+process.on('SIGINT', () => {
+    saveData();
+    process.exit();
+});
