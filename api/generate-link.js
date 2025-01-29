@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     };
 
     try {
-        const response = await fetch('https://terabox-downloader-direct-download-link-generator.p.rapidapi.com/fetch', options);
+        const response = await fetch('https://terabox-downloader-direct-download-link-generator2.p.rapidapi.com/url', options);
 
         if (!response.ok) {
             const errorText = await response.text();
