@@ -1,1 +1,1 @@
-web: node index.js
+web: node api/generate-link.js
