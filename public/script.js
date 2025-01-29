@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const data = await response.json();
 
-            if (data && data.dlink) {
-                linkDisplay.value = data.dlink;
+            if (data && data.direct_link) {
+                linkDisplay.value = data.direct_link;
                 statusMessage.textContent = 'Link generated successfully!';
             } else {
                 statusMessage.textContent = 'Failed to generate link. Please try again later.';
